@@ -1,0 +1,16 @@
+<html>
+<head>
+</head>
+<form name="n1" action="welcome.php" method="post">
+<body>
+<table border="1">
+<tr><td >Yes<input type="radio" name="que" value="Yes"></td>
+	<td >No<input type="radio" name="que" value="No"></td></tr>
+<tr>
+<td  colspan="2" align="center"><input type="submit" name="Submit_Feedback" value="submit feedback" />
+</td>
+</tr>
+</table>
+</body>
+</form>
+</html>

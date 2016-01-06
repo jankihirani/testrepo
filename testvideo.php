@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+<button onclick="getCurTime()" type="button">Get current time position</button>
+<button onclick="setCurTime()" type="button">Set time position to 5 seconds</button><br> 
+
+<video id="myVideo" width="320" height="176" controls>
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+
+<script>
+var vid = document.getElementById("myVideo");
+var myVar = setInterval(myTimer, 1000);
+function myTimer() {
+    
+    if(Math.floor(vid.currentTime)==4)
+     {
+vid.pause();
+     }
+}
+function getCurTime() { 
+    alert(vid.currentTime);
+} 
+
+function setCurTime() { 
+    vid.currentTime=5;
+} 
+</script> 
+
+<p>Video courtesy of <a href="http://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
+
+</body> 
+</html>
